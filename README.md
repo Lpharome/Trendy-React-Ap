@@ -11,7 +11,7 @@ Backend: A secure Node.js and Express-powered server handling authentication, da
 Frontend: A React-based user interface providing seamless interaction for end users.
 
 🚀 Live Demo
-Try out the live version of the app here: 👉 Live Demo Link 
+Try out the live version of the app here: 👉 no live demo link for now
 
 🛠️ Tech Stack
 
