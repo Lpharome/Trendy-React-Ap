@@ -1,0 +1,126 @@
+.cart {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+
+    .cart-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .empty-cart {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: #ff4d4f;
+        padding: 20px;
+    }
+
+    .cart-items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        tr {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-radius: 8px;
+            background: #f8f9fa;
+            transition: transform 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            }
+        }
+
+        td {
+            flex: 1;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .cart-item-image {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s ease;
+            &:hover {
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+        }
+
+        .cart-quantity {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+    }
+
+    .cart-summary {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background: #007bff;
+        color: #fff;
+        border-radius: 8px;
+
+        .cart-total {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        button {
+            background: #28a745;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                background: #218838;
+                transform: translateY(-2px);
+            }
+        }
+    }
+}
+
+// Responsive Design
+@media screen and (max-width: 768px) {
+    .cart {
+        max-width: 95%;
+    }
+
+    .cart-items tr {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .cart-summary {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .cart-summary button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+  

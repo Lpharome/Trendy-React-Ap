@@ -1,0 +1,130 @@
+.order-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #1a1a1a;
+    }
+
+    .order-tracker {
+        margin: 20px 0;
+        .ant-steps-item-title {
+          font-size: 13px;
+        }
+        .ant-steps {
+          max-width: 100%;
+          overflow-x: auto;
+        }
+      }
+      
+  
+    .ant-typography {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  
+    .order-items {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 1rem;
+      padding-left: 1rem;
+  
+      .order-item {
+        display: flex;
+        justify-content: space-between;
+        background: #f9f9f9;
+        padding: 12px 16px;
+        border-radius: 8px;
+        border: 1px solid #eee;
+  
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+  
+    .order-actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+      gap: 1rem;
+  
+      button {
+        flex: 1;
+        font-weight: bold;
+        padding: 12px;
+      }
+    }
+  
+    // Shipping Info
+    h4 {
+      margin-top: 1.5rem;
+      color: #444;
+    }
+  
+    .ant-divider {
+      margin: 24px 0;
+    }
+  
+    @media (max-width: 600px) {
+      padding: 1rem;
+  
+      .order-item {
+        flex-direction: column;
+        align-items: flex-start;
+  
+        span {
+          margin-bottom: 4px;
+        }
+      }
+  
+      .order-actions {
+        flex-direction: column;
+  
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+@media (max-width: 480px) {
+  .order-details {
+    padding: 0.5rem;
+    h2 {
+      font-size: 1.2rem;
+    }
+    .order-tracker {
+      margin: 10px 0;
+      .ant-steps-item-title {
+        font-size: 11px;
+      }
+    }
+    .ant-typography {
+      font-size: 14px;
+    }
+    .order-items {
+      gap: 8px;
+      .order-item {
+        padding: 8px 12px;
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+    .order-actions {
+      gap: 0.5rem;
+      button {
+        padding: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+}

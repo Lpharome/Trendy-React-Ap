@@ -1,0 +1,17 @@
+.widget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f0f2f5;
+    padding: 20px;
+
+    .widget-content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .widget-icon {
+            font-size: 3rem;
+        }
+    }
+}

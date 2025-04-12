@@ -1,0 +1,34 @@
+.order-history {
+    padding: 2rem;
+    background-color: #f8f9fa; // Light background
+    min-height: 100vh;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #2c3e50;
+    }
+  
+    .ant-table {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+  
+      .ant-table-thead > tr > th {
+        background-color: #f0f2f5;
+        font-weight: 600;
+        color: #34495e;
+      }
+  
+      .ant-table-tbody > tr > td {
+        padding: 12px;
+        color: #2c3e50;
+      }
+  
+      .ant-table-tbody > tr:hover {
+        background-color: #f6f6f6;
+      }
+    }
+  }
+  

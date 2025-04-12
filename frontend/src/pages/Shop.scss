@@ -1,0 +1,139 @@
+// Global shop page container
+.shop-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  // Shop header section
+  .shop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  
+    h2 {
+      font-weight: bold;
+      color: #333;
+    }
+  
+    .filters {
+      display: flex;
+      gap: 15px;
+  
+      input,
+      .ant-select {
+        min-width: 200px;
+      }
+    }
+  }
+  
+  // Product grid layout
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  // Product card styles
+  .product-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  // Loading spinner center alignment
+  .ant-spin {
+    display: block;
+    margin: 50px auto;
+  }
+
+@media (max-width: 768px) {
+  .shop-page {
+    padding: 10px;
+  }
+
+  .shop-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    h2 {
+      font-size: 18px;
+    }
+
+    .filters {
+      flex-direction: column;
+      gap: 10px;
+
+      input,
+      .ant-select {
+        min-width: 100%;
+      }
+    }
+  }
+
+  .product-grid {
+    gap: 12px;
+  }
+
+  .product-card {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-header {
+    h2 {
+      font-size: 16px;
+    }
+
+    .filters {
+      gap: 5px;
+
+      input,
+      .ant-select {
+        min-width: 100%;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .product-card {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .shop-page {
+    padding: 5px;
+  }
+
+  .shop-header {
+    h2 {
+      font-size: 14px;
+    }
+
+    .filters {
+      gap: 3px;
+
+      input,
+      .ant-select {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .product-card {
+    padding: 6px;
+    font-size: 12px;
+  }
+}

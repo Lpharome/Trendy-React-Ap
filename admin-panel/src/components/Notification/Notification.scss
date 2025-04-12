@@ -1,0 +1,61 @@
+.notification-container {
+    text-align: center;
+    margin: 20px;
+
+    h3 {
+        font-size: 1.5rem;
+        color: #4A00E0;
+        margin-bottom: 15px;
+    }
+
+    .notification-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &.success-btn {
+                background-color: #28a745;
+                color: #fff;
+
+                &:hover {
+                    background-color: #218838;
+                }
+            }
+
+            &.error-btn {
+                background-color: #dc3545;
+                color: #fff;
+
+                &:hover {
+                    background-color: #c82333;
+                }
+            }
+
+            &.info-btn {
+                background-color: #17a2b8;
+                color: #fff;
+
+                &:hover {
+                    background-color: #138496;
+                }
+            }
+
+            &.warning-btn {
+                background-color: #ffc107;
+                color: #212529;
+
+                &:hover {
+                    background-color: #e0a800;
+                }
+            }
+        }
+    }
+}

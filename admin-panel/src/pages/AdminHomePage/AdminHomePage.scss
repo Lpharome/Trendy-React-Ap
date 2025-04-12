@@ -1,0 +1,28 @@
+.admin-home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    .admin-layout {
+        display: flex;
+        flex: 1;
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+
+            h1 {
+                margin-bottom: 20px;
+            }
+
+            .dashboard-widgets {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+
+                
+                }
+            }
+        }
+}
+

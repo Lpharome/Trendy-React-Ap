@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #001529;
+    color: white;
+
+    .header-search {
+        max-width: 300px;
+    }
+
+    .header-icons {
+        display: flex;
+        gap: 20px;
+
+        .header-icon {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    }
+}

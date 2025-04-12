@@ -1,0 +1,97 @@
+.about-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+
+    .about-hero {
+        text-align: center;
+        padding: 50px 20px;
+        background-image: url('../assets/about-hero.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+
+        h1 {
+            font-size: 3rem;
+            color: white;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+    }
+
+    .about-section {
+        margin: 40px 0;
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+            text-align: justify;
+        }
+    }
+
+    .about-cta {
+        text-align: center;
+        padding: 20px;
+        background-color: #e09d70;
+        color: white;
+
+        a {
+            color: #FFD700;
+            font-weight: bold;
+            text-decoration: underline;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .about-hero {
+            padding: 30px 10px;
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .about-section {
+            margin: 20px 0;
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+
+        .about-cta {
+            padding: 15px;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            a {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

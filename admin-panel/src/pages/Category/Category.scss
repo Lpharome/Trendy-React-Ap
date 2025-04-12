@@ -1,0 +1,44 @@
+.category-admin {
+    padding: 20px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .category-table {
+        margin-top: 20px;
+        background-color: #f4f4f9;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .category-image {
+        width: 70px;
+        height: 70px;
+        object-fit: cover; // Ensures the image maintains aspect ratio and fills the box
+        border-radius: 8px; // Optional: Adds rounded corners
+        border: 1px solid #ddd; // Optional: Adds a light border
+    }
+    
+
+    .actions {
+        display: flex;
+        gap: 10px;
+    }
+
+    .ant-btn {
+        &:hover {
+            color: #40a9ff;
+        }
+    }
+
+    .ant-modal-footer {
+        display: none;
+    }
+}
+.homeIcon{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}

@@ -1,0 +1,41 @@
+.login {
+    text-align: center;
+    padding: 20px;
+
+    input {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #4A00E0;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        &:hover:not(:disabled) {
+            background-color: #8E2DE2;
+        }
+    }
+    .admin-home-icon {
+        font-size: 24px;
+        color: #4A90E2;
+        cursor: pointer;
+        margin-bottom: 15px;
+    
+        &:hover {
+            color: #1890ff; // Change color on hover
+        }
+    }
+    
+}

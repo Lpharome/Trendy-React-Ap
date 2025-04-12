@@ -1,0 +1,26 @@
+# Node.js dependencies
+node_modules/
+
+# Build & cache directories
+dist/
+build/
+.cache/
+
+# Environment variables (Sensitive info)
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System-specific files
+.DS_Store
+Thumbs.db
+
+# Vite-specific files
+.vite/
+
+# IDE settings (optional)
+.vscode/
+.idea/

@@ -1,0 +1,114 @@
+.profile-page {
+  max-width: 600px;
+  padding: 20px;
+  background: rgb(240, 232, 232);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.profileImage {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.profileO {
+  padding: 15px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profileO h2 {
+  text-align: center; /* ✅ Ensures the heading is centered */
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+.profileO p {
+  margin-top: 10px;
+  text-align: left; /* ✅ Ensures the heading is centered */
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+
+  .span{
+    font-weight: bold
+  }
+}
+
+button {
+  margin-top: 10px;
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  background: #020d18;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: white;
+  color: #020d18;
+}
+
+/* Modal Styling */
+.ant-modal-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ant-modal-body {
+  padding: 20px;
+}
+
+.ant-modal-footer {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .profile-page {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .profileImage {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .profile-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profileO h2 {
+    font-size: 18px;
+  }
+
+  .profileO p {
+    font-size: 14px;
+  }
+
+  button {
+    width: 70%;
+    font-size: 14px;
+    padding: 8px;
+  }
+}
